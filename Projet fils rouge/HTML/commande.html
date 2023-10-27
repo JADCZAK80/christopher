@@ -8,7 +8,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="../ASSETS/images_the_district/the_district_brand/favicon.png">
     <link rel="stylesheet" href="styles.css">
-    <title>contact</title>
+    <title>commande</title>
 </head>
 
 <body>
@@ -16,41 +16,31 @@
     </div>
 
     <div class="container">
-        <form action="formulaire.php" method="post">
+        <form method="" id="Form" action="POST" onSubmit="return Verification()">
             <div class="card-deck">
                 <div class="card" style="border-color: white;">
                     <div class="card-body ">
-                        <p class="card-title ml-1">Nom</p>
+                        <p class="card-title">Nom et Prénom<span class="text-danger">*</span></p>
 
                         <label for="nom"></label>
-                        <input type="text" class="form-control" id="nom" name="nom">
-
-                        <p class="alert-danger ml-1 mt-1">Ce champ est obligatoire</p>
+                        <input type="text" class="form-control" id="nom" name="nom" class="w-100">
+                        <span id="nom_manquant"></span>
                     </div>
                 </div>
 
 
-                <div class="card" style="border-color: white;">
-                    <div class="card-body">
-                        <p class="card-title ml-1">Prénom</p>
 
-                        <label for="Prenom"></label>
-                        <input type="text" class="form-control" id="Prenom" name="Prenom">
-
-                        <p class="alert-danger ml-1 mt-1">Ce champ est obligatoire</p>
-                    </div>
-                </div>
             </div>
 
 
-            <div class="card-deck">
-                <div class="card" style="border-color: white;">
+            <div class="card-deck ">
+                <div class="card " style="border-color: white;">
                     <div class="card-body ">
-                        <p class="card-title ml-1">Email</p>
+                        <p class="card-title">Email<span class="text-danger">*</span></p>
 
-                        <label for="Email"></label>
-                        <input type="text" class="form-control" id="Email" name="Email">
-
+                        <label for="mail"></label>
+                        <input type="text" id="mail" class="form-control" name="mail" class="w-50">
+                        <span id="mail_manquant"></span>
 
                     </div>
                 </div>
@@ -58,35 +48,38 @@
 
                 <div class="card" style="border-color: white;">
                     <div class="card-body">
-                        <p class="card-title ml-1">Téléphone</p>
+                        <p class="card-title">Téléphone<span class="text-danger">*</span></p>
 
-                        <label for="Telephone"></label>
-                        <input type="text" class="form-control" id="Telephone" name="Telephone">
-
-                        <p class="alert-danger ml-1 mt-1">Ce champ est obligatoire</p>
+                        <label for="Téléphone"></label>
+                        <input type="text" id="Téléphone" class="form-control" name="Téléphone" class="w-50">
+                        <span id="Téléphone_manquant"></span>
                     </div>
                 </div>
 
             </div>
+
+
             <div class="card-deck">
                 <div class="card" style="border-color: white;">
                     <div class="card-body ">
-                        <p class="card-title ml-1">Votre demande</p>
+                        <p class="card-title ml-1">Votre adresse <span class="text-danger">*</span></p>
 
-                        <label for="demande"></label>
-                        <textarea name="demande" class="form-control" id="demande" cols="30" rows="10"
+                        <label for="adresse"></label>
+                        <textarea name="adresse" id="adresse" class="form-control" cols="0" rows="5"
                             class="w-100"></textarea>
-
+                        <span id="adresse_manquant"></span>
 
                     </div>
                 </div>
             </div>
             <div class="d-flex justify-content-end card-body">
-                <button type="submit" name="submit_button" class="btn btn-dark ">Envoyer</button>
+                <button class="btn btn-dark " type="submit" id="bouton_envoi">Envoyer</button>
             </div>
         </form>
     </div>
+
     <div id="content2"></div>
+    <script src="../JAVASCRIPS/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"

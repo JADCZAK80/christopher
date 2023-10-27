@@ -1,0 +1,51 @@
+a {
+    color: black;
+}
+div.hover {
+    width: 20vw;
+    height: 20vw;
+    transition-duration: 1s;
+
+}
+
+div.hover:hover {
+    width: 22vw;
+    height: 22vw;
+
+}
+
+.corp {
+    background-image: url(../ASSETS/images_the_district/image_retoucher/plat_accueil/couleur-bordeaux-10.jpg);
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h3 {
+    font-weight: bold;
+    color: darkmagenta;
+    text-shadow: 2px 2px 5px whitesmoke, 2px 2px 10px whitesmoke;
+}
+
+.overlay {
+    position: absolute;
+    top: 22vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.card.card-empty {
+    border: none;
+}
+
+.empty-row {
+    min-height: 21vw;
+}
+
+@media only screen and (max-width: 576px) {
+    .mobile {
+        display: none;
+    }
+}
