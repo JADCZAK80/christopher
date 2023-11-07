@@ -8,7 +8,7 @@
         echo "N° : " . $e->getCode();
         die("Fin du script");
     }       
-    $requete = $db->query("SELECT *
+$requete = $db->query("SELECT *
 FROM artist
 JOIN disc ON artist.artist_id = disc.artist_id
 ORDER BY artist.artist_name;");
@@ -24,8 +24,8 @@ $requete->closeCursor();
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Test PDO</title>
     <style>img {
-        width:250px;
-        height:250px;
+        width:200px;
+        height:200px;
     }
 a{
     color:white;

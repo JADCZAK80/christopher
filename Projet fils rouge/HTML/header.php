@@ -1,4 +1,18 @@
+<?php
 
+?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="hidth=device-hidth, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="../ASSETS/images_the_district/the_district_brand/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>The District</title>
+</head>
+<body>
 <header>
 <div class="container-fluid  " style="background-color: #970747;">
     
@@ -13,22 +27,22 @@
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             
             <li class="nav-item ">
-                <a class="nav-link h2" href="index.html">Accueil </a>
+                <a class="nav-link <?=$navta?> h<?=$nava?>" href="index.php">Accueil </a>
             </li>
             
             
             <li class="nav-item ">
-                <a class="nav-link h2" href="Catégories.html"><span class="sr-only">(current)</span>Catégorie</a>
+                <a class="nav-link <?=$navtca?> h<?=$navca?>" href="catégories.php"><span class="sr-only">(current)</span>Catégorie</a>
             </li>
            
             
             <li class="nav-item ">
-                <a class="nav-link h2" href="plats.html">Plats</a>
+                <a class="nav-link <?=$navtp?> h<?=$navp?>" href="plat.php">Plats</a>
             </li>
             
             
             <li class="nav-item">
-                <a class="nav-link h2" href="contact.html">Contact</a>
+                <a class="nav-link <?=$navtco?> h<?=$navco?>" href="contact.php">Contact</a>
             </li>
             
             </ul>
@@ -37,12 +51,30 @@
     </nav>
     
 </div>
-<div class="container-fluid p-5" style="background-image: url(../ASSETS/images_the_district/bg1.jpeg); background-size: cover;">
+<?php
+$bar='<div class="container-fluid p-5" style="background-image: url(../ASSETS/images_the_district/bg1.jpeg); background-size: cover;">
         <div class="d-none d-sm-block">
         </div>
     </div>
+</div>
+</header>';
 
+$vid='
+<div class="d-none d-sm-block">
+<div class=" container justify-content-center">
+    <video autoplay loop muted style=" width: 100% ;max-height: 15vw;">
+        <source src="../ASSETS/video/mov_bbb.mp4">
+    </video>
+</div>
 </div>
 
-</header>
+<div class="d-none d-sm-block">
+    <div class="overlay">
+        <form action="" method="post">
+            <input class="rounded mx-auto d-block" type="text" placeholder="Recherche...">
+        </form>
+    </div>
+</div>
+</header>';
+?>
 

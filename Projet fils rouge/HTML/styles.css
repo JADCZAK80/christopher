@@ -2,15 +2,19 @@ a {
     color: black;
 }
 div.hover {
-    width: 20vw;
-    height: 20vw;
+    width: 80%;
+    height: 80%;
     transition-duration: 1s;
 
 }
 
 div.hover:hover {
-    width: 22vw;
-    height: 22vw;
+    width: 90%;
+    height: 90%;
+    background-color: rgb(230, 187, 230);
+    font-weight: bolder;
+    font-size: larger;
+    color: rgb(99, 41, 23);
 
 }
 
@@ -44,8 +48,37 @@ h3 {
     min-height: 21vw;
 }
 
+img {
+    width: 80%;
+    height: 80%;
+    transition-duration: 1s;
+}
+
+
+
+.text {
+    font-style: normal;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.paccueil{
+    width: 20vw;
+    height: 15vw;
+}
+
+
 @media only screen and (max-width: 576px) {
     .mobile {
+        display: none;
+    }
+
+}
+@media only screen and (min-width: 576px) {
+    .nombre4{
+        display: none;
+    }    
+    .nombre5{
         display: none;
     }
 }
