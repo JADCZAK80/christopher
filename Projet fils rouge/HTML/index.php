@@ -14,6 +14,10 @@ $tableaua = get_plata($db);
 ?>
 <div class="corp pt-2">
 <div class="container-fluid mt-2 mb-2">
+    <div class="mobile">
+
+    <h3 class="d-flex justify-content-center">Catégories</h3>
+</div>
     <div class="row">
         <?php foreach ($tableau as $categories): ?>
             
@@ -43,6 +47,7 @@ $tableaua = get_plata($db);
 </div>
 
 <div class="container-fluid">
+<h3 class="d-flex justify-content-center">Plats</h3>
     <div class="row">
         <?php foreach ($tableaua as $categoriea): ?>
             

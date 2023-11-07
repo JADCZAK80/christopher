@@ -29,7 +29,7 @@ div.hover:hover {
 
 h3 {
     font-weight: bold;
-    color: darkmagenta;
+    color: rgb(139, 0, 0);
     text-shadow: 2px 2px 5px whitesmoke, 2px 2px 10px whitesmoke;
 }
 
@@ -71,6 +71,9 @@ img {
 @media only screen and (max-width: 576px) {
     .mobile {
         display: none;
+    }
+    .nombre {
+        display: inline-block;
     }
 
 }
