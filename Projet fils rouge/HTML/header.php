@@ -37,7 +37,7 @@
            
             
             <li class="nav-item ">
-                <a class="nav-link <?=$navtp?> h<?=$navp?>" href="plat.php">Plats</a>
+                <a class="nav-link <?=$navtp?> h<?=$navp?>" href="tous_plat.php">Plats</a>
             </li>
             
             

@@ -54,7 +54,10 @@ img {
     transition-duration: 1s;
 }
 
-
+img.plat{
+    width: 15vw;
+    height: 15vw;
+}
 
 .text {
     font-style: normal;
@@ -70,18 +73,6 @@ img {
 
 @media only screen and (max-width: 576px) {
     .mobile {
-        display: none;
-    }
-    .nombre {
-        display: inline-block;
-    }
-
-}
-@media only screen and (min-width: 576px) {
-    .nombre4{
-        display: none;
-    }    
-    .nombre5{
         display: none;
     }
 }

@@ -11,7 +11,7 @@ require 'header.php';
 echo $bar;
 ?>
  <div class="container">
-        <form action="formulaire.php" method="post">
+        <form action="formulaire.php" method="post" onSubmit="return Verification()">
             <div class="card-deck">
                 <div class="card" style="border-color: white;">
                     <div class="card-body ">
@@ -19,7 +19,7 @@ echo $bar;
 
                         <label for="nom"></label>
                         <input type="text" class="form-control" id="nom" name="nom">
-
+                        <span id="nom_manquant"></span>
                         <p class="alert-danger ml-1 mt-1">Ce champ est obligatoire</p>
                     </div>
                 </div>
@@ -81,6 +81,7 @@ echo $bar;
             </div>
         </form>
     </div>
+    <script src="script1.js"></script>
 <?php
 require 'footer.php';
 

@@ -2,7 +2,7 @@
 
 function Verification() {
     var nom = document.getElementById('nom').value;
-    var regexnom = /^[A-Za-z]+$/
+    var regexnom = /^[A-Za-z- ]+$/
     if(nom===''){
         document.getElementById('nom').style.backgroundColor="red";
         document.getElementById('nom').style.color="#FFF";
