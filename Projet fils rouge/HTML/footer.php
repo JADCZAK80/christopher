@@ -16,8 +16,10 @@
             src="../ASSETS/images_the_district/the_district_brand/Logo-youtube.jpg"
             alt="Youtube_Logo" style="width: 50px; height: 50px;"></a></div>
 </div>
-
-
+<div class="d-flex justify-content-around">
+<a href="Politique.php">Politique de Confidentialité</a>
+<a href="Mention.php">Mentions Légales</a>
+</div>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
 ></script>
