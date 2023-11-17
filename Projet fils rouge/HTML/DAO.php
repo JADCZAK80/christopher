@@ -136,6 +136,7 @@ function get_commande($db) {
             echo '<div class="container-fluid mt-2 mb-2">
             <input type="hidden" name="id_plat" id="id_plat" value="'.$categories->id.'">
             <input type="hidden" name="prix" id="prix" value="'.$categories->prix.'">
+            <input type="hidden" name="libelle" id="libelle" value="'.$categories->libelle.'">
                     <div class="container">
                         <div class="row">
                         <div class="card d-flex col-12">

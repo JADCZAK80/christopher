@@ -22,6 +22,7 @@ if (isset($_POST['submit_button'])) {
     $total = $prix * $nombre;
     $total = number_format($total, 2, '.', '');
     $etat = "En préparation";
+    $libelle = $_POST['libelle'];
 
 // ...
 
@@ -91,7 +92,8 @@ VALUES (:id_plat, :nombre, :total, :dates, :etat, :nom, :telephone_client, :mail
     $mail->Subject = 'commande the_district';
     
     // Corps du message
-    $mail->Body = "commande réaliser avec succés";
+    $mail->Body = "Commande réalisée avec succès {$nombre} {$libelle} pour un total de : {$total}";
+
     
     // On envoie le mail dans un block try/catch pour capturer les éventuelles erreurs
     if ($mail){
